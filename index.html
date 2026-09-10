@@ -40,11 +40,13 @@
             uma estrela em pixel art no topo e um fundo azul com circuitos tecnológicos">
             <main>
                 <button>💩 <span>0</span></button>
+                <button>💀<span>0</span></button>
             </main>
 </body>
 <script>
-    const  botao = document.querySelector("button");
+    const  botoes = document.querySelectorAll("button");
 
+botoes.forEach (function (botao){
     botao.addEventListener("click", botaoClicado);
 
     function botaoClicado(){
@@ -54,5 +56,11 @@
         ("span");
         texto.textContent++;
     }
+
+}
+    
+
+)
+
 </script>
 </html>
